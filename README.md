@@ -1,45 +1,40 @@
 
 
 
-# *Proyecto de Escaneo de Red*
+# Network Scanner 🔍
 
-Este proyecto proporciona un script en Python que escanea la red a la que estás conectado para obtener información sobre la dirección IP, el rango de red, la dirección de red y los hosts conectados.
+Escáner de red automático que detecta:
+- IP y máscara de red local
+- Rango CIDR
+- Dirección de broadcast
+- Dispositivos activos en la red
 
-*Estructura del Proyecto*
+## Características ✨
+- Detección automática de interfaz de red
+- Escaneo rápido con Nmap
+- Salida coloreada
+- Manejo de errores robusto
 
-```
-├── requirements.txt
-└── script.py
-```
+## Requisitos 📦
 
-*Requisitos*
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-Antes de ejecutar el script, asegúrate de instalar las bibliotecas necesarias listadas en `requirements.txt` y Nmap en su versión más reciente.
+1. **Python (3.x recomendado)**:
 
-```bash
-pip install -r requirements.txt
-```
+2. **Nmap**:
 
-*Uso*
+3. **Bibliotecas de Python**:
+   Instala las dependencias necesarias ejecutando:
+   ```bash
+   pip install python-nmap netifaces termcolor
+   ```
 
-Para ejecutar el script, simplemente ejecuta el archivo `script.py` con Python este realizará el escaneo de red en automático.
+### *Usos ✨*
 
-```bash
-python script.py
-```
-```
-Para la red a la que estás conectado:
-•el rango de red es:
--192.168.1.102/24
-•Dirección de red:
--192.168.1.0
-•Rango de direcciones:
-192.168.1.0 - 192.168.1.255
--192.168.1.1
--192.168.1.100
--192.168.1.101
--192.168.1.102
-```
-
+Este código es ideal para:
+- Auditorías de red básicas
+- Detección de dispositivos IoT
+- Herramientas de diagnóstico de red
+- Proyectos de ciberseguridad básicos
 
 
